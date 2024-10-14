@@ -9,18 +9,22 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane accessibleRole="IMAGE_VIEW" layoutX="1.0" layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9FE2BF;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmicalculator.HelloController">
+
+<VBox xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bmicalculator.HelloController">
    <children>
-      <VBox prefHeight="200.0" prefWidth="100.0" />
-      <ChoiceBox fx:id="myChoiceBox" accessibleText="metric" layoutX="343.0" layoutY="77.0" prefWidth="150.0" />
-      <TextField fx:id="massInput" layoutX="71.0" layoutY="116.0" prefHeight="25.0" prefWidth="190.0" promptText="write ypur mass" />
-      <TextField fx:id="heightInput" layoutX="71.0" layoutY="77.0" prefHeight="25.0" prefWidth="190.0" promptText="write your height" />
-      <ButtonBar layoutX="194.0" layoutY="18.0" prefHeight="40.0" prefWidth="200.0" />
-      <Label fx:id="valueOutput" layoutX="200.0" layoutY="242.0" prefHeight="24.0" prefWidth="218.0" />
-      <Text layoutX="54.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI value" wrappingWidth="91.13671875" />
-      <Text layoutX="54.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI status" wrappingWidth="64.13671875" />
-      <Label fx:id="statusOutput" layoutX="200.0" layoutY="289.0" />
-      <Button layoutX="84.0" layoutY="180.0" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="451.0" text="Calculate" />
-      <Label fx:id="errorMessage" layoutX="347.0" layoutY="129.0" prefHeight="25.0" prefWidth="143.0" />
+      <AnchorPane accessibleRole="IMAGE_VIEW" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #9FE2BF;">
+         <children>
+            <ChoiceBox fx:id="myChoiceBox" accessibleText="metric" layoutX="343.0" layoutY="77.0" prefWidth="150.0" />
+            <TextField fx:id="massInput" layoutX="71.0" layoutY="116.0" prefHeight="25.0" prefWidth="190.0" promptText="write ypur mass" />
+            <TextField fx:id="heightInput" layoutX="71.0" layoutY="77.0" prefHeight="25.0" prefWidth="190.0" promptText="write your height" />
+            <ButtonBar layoutX="194.0" layoutY="18.0" prefHeight="40.0" prefWidth="200.0" />
+            <Label fx:id="valueOutput" layoutX="200.0" layoutY="242.0" prefHeight="24.0" prefWidth="218.0" />
+            <Text layoutX="54.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI value" wrappingWidth="91.13671875" />
+            <Text layoutX="54.0" layoutY="302.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BMI status" wrappingWidth="64.13671875" />
+            <Label fx:id="statusOutput" layoutX="200.0" layoutY="289.0" />
+            <Button layoutX="84.0" layoutY="180.0" mnemonicParsing="false" onAction="#submit" prefHeight="40.0" prefWidth="451.0" text="Calculate" />
+            <Label fx:id="errorMessage" layoutX="347.0" layoutY="129.0" prefHeight="25.0" prefWidth="143.0" />
+         </children>
+      </AnchorPane>
    </children>
-</AnchorPane>
+</VBox>
